@@ -1,0 +1,23 @@
+{
+  "name": "views",
+  "version": "1.0.0",
+  "description": "Something good",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "optimization"
+  ],
+  "author": "JC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juancarlucci/frontend-nanodegree-mobile-portfolio/issues"
+  },
+  "homepage": "https://github.com/juancarlucci/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1"
+  }
+}
