@@ -2,10 +2,10 @@
 
 ####Part 1: Optimize PageSpeed Insights score for index.html
 
-Added async and minified perfmatters.js
-Minified style.css, index.html
-Compressed and resized images
-Added media="print" to print.css
+1.Added async and minified perfmatters.js
+2.Minified style.css, index.html
+3.Compressed and resized images
+4.Added media="print" to print.css
 
 
 ####Part 2: Optimize Frames per Second in pizza.html
