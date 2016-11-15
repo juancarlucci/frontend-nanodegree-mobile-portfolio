@@ -498,13 +498,20 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 // Moves the sliding background pizzas based on scroll position
+
+//moving scroll top here improved preformance
+var docBodyScroll = (document.body.scrollTop / 1250);
+
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
+  //https://discussions.udacity.com/t/optimizing-the-updatepositions-function/2834/16
+  //take this out of the loop, fewer DOM requests
+  var items = document.getElementsByClassName('mover');
+
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase = Math.sin(docBodyScroll + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
