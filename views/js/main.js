@@ -498,8 +498,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // Moves the sliding background pizzas based on scroll position
 
-//moving scroll top here improved preformance
-var docBodyScroll = (document.body.scrollTop / 1250);
+
 
 function updatePositions() {
   frame++;
@@ -508,6 +507,8 @@ function updatePositions() {
   //https://discussions.udacity.com/t/optimizing-the-updatepositions-function/2834/16
   //take this out of the loop, fewer DOM requests
   var items = document.getElementsByClassName('mover');
+  //moving scroll top here improved preformance
+  var docBodyScroll = (document.body.scrollTop / 1250);
 
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin(docBodyScroll + (i % 5));
