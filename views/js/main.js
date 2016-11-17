@@ -532,7 +532,8 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  //reduced i (pizzs) to 70, the number that fit on a full screen (1200X1400)
+  for (var i = 0; i < 70; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "img/pizza.png";
