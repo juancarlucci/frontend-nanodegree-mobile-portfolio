@@ -508,7 +508,7 @@ function updatePositions() {
   //take this out of the loop, fewer DOM requests
   var items = document.getElementsByClassName('mover');
   //moving scroll top here improved preformance
-  var docBodyScroll = (document.body.scrollTop / 1250);
+  var docBodyScroll = document.body.scrollTop / 1250;
 
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin(docBodyScroll + (i % 5));
