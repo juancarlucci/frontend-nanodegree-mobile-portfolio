@@ -46,3 +46,5 @@ Some useful tips to help you get started:
 Check views/js/main.js using Chrome Dev Tools to verify frames per second rate is 60 fps or higher.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
+
+###Link to source files used in this project: https://github.com/udacity/frontend-nanodegree-mobile-portfolio
